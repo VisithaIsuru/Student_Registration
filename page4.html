@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="container form-container">
+        <div class="col-lg-12 mx-auto login-container">
+
+      <!-- Tabs navs -->
+      <ul class="nav nav-tabs mb-3" id="ex2" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="ex2-tab-1" data-mdb-toggle="pill" href="index.html" role="tab"
+            aria-controls="ex2-tabs-1" aria-selected="true">Details of the child</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="ex2-tab-2" data-mdb-toggle="pill" href="page4.html" role="tab"
+            aria-controls="ex2-tabs-2" aria-selected="false">Details of the applicant</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="ex2-tab-3" data-mdb-toggle="pill" href="page3.html" role="tab"
+            aria-controls="ex2-tabs-3" aria-selected="false">Schools applied for</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="ex2-tab-3" data-mdb-toggle="pill" href="page5.html" role="tab"
+            aria-controls="ex2-tabs-3" aria-selected="false">Other schools </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="ex2-tab-3" data-mdb-toggle="pill" href="page6.html" role="tab"
+            aria-controls="ex2-tabs-3" aria-selected="false">Electoral List Registration</a>
+        </li>
+      </ul>
+      <!-- Tabs content -->
+      <div class="form-body">
+        <div class="form-title row">
+          <h4>Section 03</h4>
+        </div>
+<!-- Tabs navs -->
+<ul class="nav nav-tabs mb-3" id="ex2" role="tablist">
+    <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="ex2-tab-1" href="" role="tab" aria-controls="ex2-tabs-1" aria-selected="true" onclick="openTab('ex2-tabs-1', this)">Applicant</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a class="nav-link" id="ex2-tab-2" href="" role="tab" aria-controls="ex2-tabs-2" aria-selected="false" onclick="openTab('ex2-tabs-2', this)">Spouse</a>
+    </li>
+    <script>
+        function openTab(tabId, clickedTab) {
+            var tabs = document.querySelectorAll('.nav-link');
+            tabs.forEach(function (tab) {
+                tab.classList.remove('active');
+            });
+    
+            clickedTab.classList.add('active');
+                    event.preventDefault();
+        }
+    </script>
+    
+</ul>
+
+<!-- Tabs navs -->
+
+<!-- Tabs content -->
+<div class="tab-content" id="ex2-content">
+  <div class="tab-pane fade show active" id="ex2-tabs-1" role="tabpanel" aria-labelledby="ex2-tab-1">
+<h2 style="font-size: medium; font-weight: bold;">Details of the Applicant(Mother/Father/Legal Guardian)</h2>
+<br>
+    <!-- Common questions for Applicant and Spouse -->
+    <div class="form-row row">
+        <div class="col-lg-2 col-md-4">
+         <label for="">Full Name</label>
+          <span class="indc">:</span>
+       </div>
+       <div class="col-lg-4 col-md-8">
+         <input type="text" placeholder="" class="form-control form-control-sm">
+       </div>
+       <div class="col-lg-2 col-md-4">
+         <label for="">Name with initials</label>
+          <span class="indc">:</span>
+
+       </div>
+       <div class="col-lg-4 col-md-8">
+         <input type="text" placeholder="" class="form-control form-control-sm">
+       </div>
+     </div>
+     <div class="form-row row">
+        <div class="col-lg-2 col-md-4">
+          <label for="">Sri Lankan</label>
+            <span class="indc">:</span>
+        </div>
+        <div class="col-lg-4 col-md-8 pt-1">
+          <input type="radio" name="gender"> Yes &nbsp;&nbsp;
+          <input type="radio" name="gender"> No 
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <label for="religion">Religion</label>
+          <span class="indc">:</span>
+      </div>
+      <div class="col-lg-4 col-md-8">
+        <select class="form-select form-select-sm custom-select" id="religion" name="religion" aria-label="Religion" style="background-color: #35333324; border: 1px solid rgb(135, 135, 135); font-size: 12px;">
+            <option selected >Please Select Religion</option>
+            <option value="buddhist">Buddhist</option>
+            <option value="hindu">Hindu</option>
+            <option value="muslim">Muslim</option>
+            <option value="christian">Christian</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+    
+      </div>
+      <div class="form-row row">
+
+      <div class="col-lg-2 col-md-4">
+        <label for=""> NIC Number</label>
+         <span class="indc">:</span>
+      </div>
+      <div class="col-lg-4 col-md-8">
+        <input type="text" placeholder="" class="form-control form-control-sm">
+      </div>
+      
+      <div class="col-lg-2 col-md-4">
+        <label for=""> Telephone Number</label>
+         <span class="indc">:</span>
+      </div>
+      <div class="col-lg-4 col-md-8">
+        <input type="text" placeholder="" class="form-control form-control-sm">
+      </div>
+      </div>
+      <div class="form-row row">
+
+        <div class="col-lg-2 col-md-4">
+          <label for="">Address</label>
+           <span class="indc">:</span>
+        </div>
+        <div class="col-lg-4 col-md-8">
+          <input type="text" placeholder="" class="form-control form-control-sm">
+        </div>
+        
+        <div class="col-lg-2 col-md-4">
+            <label for="religion">Residential District</label>
+            <span class="indc">:</span>
+        </div>
+        <div class="col-lg-4 col-md-8">
+            <select class="form-select form-select-sm custom-select" id="residentialDistrict" name="residentialDistrict" aria-label="Residential District" style="background-color: #35333324; border: 1px solid rgb(135, 135, 135); font-size: 12px;">
+                <option selected >Please Select Residential District</option>
+              <option value="buddhist">Colombo</option>
+              <option value="hindu">Gampaha</option>
+              <option value="muslim">Kalutara</option>
+              <option value="christian">Galle</option>
+              <option value="other">Matara</option>
+              <option value="other">Hambantota</option>
+
+          </select>
+      </div>
+        </div>
+
+        <div class="form-row row">
+
+            <div class="col-lg-2 col-md-4">
+                <label for="religion">Divisional Secretariat:</label>
+            </div>
+            <div class="col-lg-4 col-md-8">
+                <select class="form-select form-select-sm custom-select" id="residentialDistrict" name="residentialDistrict" aria-label="Residential District" style="background-color: #35333324; border: 1px solid rgb(135, 135, 135); font-size: 12px;">
+                    <option selected >Please Select Divisional Secretariat</option>
+                  <option value="buddhist">Colombo</option>
+                  <option value="hindu">Gampaha</option>
+                  <option value="muslim">Kalutara</option>
+                  <option value="christian">Galle</option>
+                  <option value="other">Matara</option>
+                  <option value="other">Hambantota</option>
+    
+              </select>
+          </div>
+            
+            <div class="col-lg-2 col-md-4">
+                <label for="religion">Grama Niladhari Division:</label>
+            </div>
+            <div class="col-lg-4 col-md-8">
+                <select class="form-select form-select-sm custom-select" id="residentialDistrict" name="residentialDistrict" aria-label="Residential District" style="background-color: #35333324; border: 1px solid rgb(135, 135, 135); font-size: 12px;">
+                    <option selected >Please Select Grama Niladhari Division</option>
+                  <option value="buddhist">Colombo</option>
+                  <option value="hindu">Gampaha</option>
+                  <option value="muslim">Kalutara</option>
+                  <option value="christian">Galle</option>
+                  <option value="other">Matara</option>
+                  <option value="other">Hambantota</option>
+    
+              </select>
+          </div>
+            </div>
+  </div>
+
+
+  <div class="tab-pane fade" id="ex2-tabs-2" role="tabpanel" aria-labelledby="ex2-tab-2">
+    <h2>Details of the Spouse</h2>
+    <!-- Common questions for Applicant and Spouse -->
+    <div class="form-group">
+        <label for="spouseFullName">Full Name:</label>
+        <input type="text" class="form-control" id="spouseFullName">
+    </div>
+
+    <div class="form-group">
+        <label for="spouseNameWithInitials">Name with initials:</label>
+        <input type="text" class="form-control" id="spouseNameWithInitials">
+    </div>
+
+    <div class="form-group">
+        <label for="spouseNIC">National Identity Card Number:</label>
+        <input type="text" class="form-control" id="spouseNIC">
+    </div>
+
+    <div class="form-group">
+        <label>Are You a Sri Lankan?</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="spouseSriLankan" id="spouseSriLankanYes" value="yes" checked>
+            <label class="form-check-label" for="spouseSriLankanYes">Yes</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="spouseSriLankan" id="spouseSriLankanNo" value="no">
+            <label class="form-check-label" for="spouseSriLankanNo">No</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="spouseReligion">Religion:</label>
+        <select class="form-control" id="spouseReligion" multiple>
+            <option value="buddhist">Buddhist</option>
+            <option value="hindu">Hindu</option>
+            <option value="muslim">Muslim</option>
+            <option value="christian">Christian</option>
+            <!-- Add more options as needed -->
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="spousePermanentAddress">Permanent Address:</label>
+        <textarea class="form-control" id="spousePermanentAddress" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="spouseTelephone">Telephone Number:</label>
+        <input type="tel" class="form-control" id="spouseTelephone">
+    </div>
+
+    <div class="form-group">
+        <label for="spouseResidentialDistrict">Residential District:</label>
+        <input type="text" class="form-control" id="spouseResidentialDistrict">
+    </div>
+
+    <div class="form-group">
+        <label for="spouseDivisionalSecretariat">Divisional Secretariat relevant to the residence:</label>
+        <input type="text" class="form-control" id="spouseDivisionalSecretariat">
+    </div>
+
+    <div class="form-group">
+        <label for="spouseGramaNiladhari">Grama Niladhari Division and No. relevant to the place of residence:</label>
+        <input type="text" class="form-control" id="spouseGramaNiladhari">
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-end mt-3">
+    <a href="page3.html" class="btn btn-primary proceed-button" >Next</a>
+</div>
+
+<!-- Add Bootstrap JS and Popper.js scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+  
+
+</body>
+</html>
