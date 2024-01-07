@@ -1,136 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Student Registration</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofKyDf5H9gAWG8v5q7pI1SMAKtd5KZ5rW5"
-    crossorigin="anonymous"></script>
-  <!-- MDB JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.0/mdb.min.js"
-    integrity="sha512-4T/4RrDNpSAlFdPgO+VlWsSEn46Ag3IaHVYwpu1gFCu8L+UxIHHJ8WFLHV1b7Luywo73Atn9a6aPVpUf/jg41Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="script.js"></script>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Student Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofKyDf5H9gAWG8v5q7pI1SMAKtd5KZ5rW5" crossorigin="anonymous"></script>
+    <!-- MDB JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.0/mdb.min.js" integrity="sha512-4T/4RrDNpSAlFdPgO+VlWsSEn46Ag3IaHVYwpu1gFCu8L+UxIHHJ8WFLHV1b7Luywo73Atn9a6aPVpUf/jg41Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
-  <div class="container form-container">
-    <div class="col-lg-12 mx-auto login-container">
-      <div class="row form-header">
-        <div class="col-md-2 logocol">
-          <img src="assets/images/Sri-Lanka-Government-logo.png" alt="">
-        </div>
-        <div class="col-md-10 headcol">
-          <h4>Ministry of Education</h4>
-          <p>Instructions related to the admission of children to Grade One
-            in Government Schools for the Year 2024</p>
-          <p class="cinfo">
-            <span><i class="fas fa-phone"></i> +91 #######</span>
-            <span><i class="fas fa-envelope"></i> example@gmail.com</span>
-            <span><i class="fas fa-map-marker-alt"></i> Colombo</span>
-          </p>
-        </div>
-      </div>
-      <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
-        <li class="nav-item" role="presentation">
-          <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="pill" href="page2.html" role="tab"
-            aria-controls="ex1-tabs-1" aria-selected="true">Category</a>
-        </li>
-          <li class="nav-item" role="presentation">
-            <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="pill" href="index.html" role="tab"
-              aria-controls="ex1-tabs-1" aria-selected="true">Details of the child</a>
-          </li>
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" id="ex1-tab-2" data-mdb-toggle="pill" href="page4.html" role="tab"
-              aria-controls="ex1-tabs-2" aria-selected="false">Details of the applicant</a>
-          </li>
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" id="ex1-tab-3" data-mdb-toggle="pill" href="page3.html" role="tab"
-              aria-controls="ex1-tabs-3" aria-selected="false">Schools applied for</a>
-          </li>
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" id="ex1-tab-3" data-mdb-toggle="pill" href="page5.html" role="tab"
-              aria-controls="ex1-tabs-3" aria-selected="false">Other schools </a>
-          </li>
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" id="ex1-tab-3" data-mdb-toggle="pill" href="page6.html" role="tab"
-              aria-controls="ex1-tabs-3" aria-selected="false">Electoral List Registration</a>
-          </li>
-        <div class="ms-auto">
-          <select class="form-select form-select-sm custom-select" id="religion" name="religion" aria-label="Religion"
-            style="background-color: #2e0bdd24; border: 1px solid rgb(135, 135, 135); height: 40px;">
-            <option selected>English</option>
-            <option value="buddhist">Sinhala</option>
-            <option value="hindu">Tamil</option>
-          </select>
-        </div>
-      </ul>
-      <div class="col-lg-3 col-md-8 mt-3 highlighted" id="nameContainer">
-        <label for="name">Name</label>
-        <span class="indc">:</span>
-        <span id="name">John Doe</span>
-    </div>
-    <div class="col-lg-3 col-md-8 mt-2 highlighted" id="referenceNoContainer">
-        <label for="referenceNo">Reference No</label>
-        <span class="indc">:</span>
-        <span id="referenceNo">ABC123</span>
-    </div>
-      <div class="form-body">
-        <div class="form-title row">
-          <h4>Section 01</h4>
-        </div>
-        <div class="form-row row">
-            <div class="col-lg-3 col-md-4">
-              <label for="categoryAppliedFor">Category applied for</label>
-              <sup class="req">*</sup>
-              <span class="indc">:</span>
+    <div class="container form-container">
+        <div class=" col-lg-12 mx-auto login-container">
+            <div class="row form-header">
+                <div class="col-md-2 logocol">
+                    <img src="assets/images/Sri-Lanka-Government-logo.png" alt="">
+                </div>
+                <div class="col-md-10 headcol">
+                    <h4>Ministry of Education</h4>
+                    <p>Instructions related to the admission of children to Grade One in Government Schools for the Year 2024</p>
+                    <p class="cinfo">
+                        <span><i class="fas fa-phone"></i> +91 #######</span>
+                        <span><i class="fas fa-envelope"></i> example@gmail.com</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Colombo</span>
+                    </p>
+                </div>
             </div>
-            <div class="col-lg-4 col-md-8">
-              <select class="form-select form-select-sm custom-select" id="categoryAppliedFor" name="categoryAppliedFor"
-                aria-label="Category applied for" style="background-color: #35333324; border: 1px solid rgb(135, 135, 135);">
-                <option selected disabled>Select a category</option>
-                <option value="National">National</option>
-                <option value="Provincial">Provincial</option>
-              </select>
-            </div>
-          </div>
-          
-          <div class="form-row row mt-4">
-            <div class="col-lg-3 col-md-4">
-              <label for="ageOn31Jan2024" class="d-inline">School applied for</label>
-              <sup class="req">*</sup>
-              <span class="indc d-inline">:</span>
-            </div>
-            <div class="col-lg-4 col-md-8">
-              <input type="text" placeholder="" class="form-control form-control-sm">
-          </div>
-          </div>
 
-          <div class="form-row row">
-            <div class="col-lg-3 col-md-4">
-              <label for="ageOn31Jan2024" class="d-inline">Distance to the school</label>
-              <sup class="req">*</sup>
-              <span class="indc d-inline">:</span>
+            <!-- Tabs navs -->
+            <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="pill" href="index.html" role="tab"
+                  aria-controls="ex1-tabs-1" aria-selected="true">Category</a>
+              </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="pill" href="page2.html" role="tab"
+                        aria-controls="ex1-tabs-1" aria-selected="true">Details of the child</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="ex1-tab-2" data-mdb-toggle="pill" href="page4.html" role="tab"
+                        aria-controls="ex1-tabs-2" aria-selected="false">Details of the applicant</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="ex1-tab-3" data-mdb-toggle="pill" href="page3.html" role="tab"
+                        aria-controls="ex1-tabs-3" aria-selected="false">Schools applied for</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="ex1-tab-3" data-mdb-toggle="pill" href="page5.html" role="tab"
+                        aria-controls="ex1-tabs-3" aria-selected="false">Other schools </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="ex1-tab-3" data-mdb-toggle="pill" href="page6.html" role="tab"
+                        aria-controls="ex1-tabs-3" aria-selected="false">Electoral List Registration</a>
+                </li>
+            </ul>
+            <div class="col-lg-3 col-md-8 mt-3 highlighted" id="nameContainer">
+                <label for="name">Name</label>
+                <span class="indc">:</span>
+                <span id="name">John Doe</span>
             </div>
-            <div class="col-lg-4 col-md-8">
-              <input type="text" placeholder="" class="form-control form-control-sm">
+            <div class="col-lg-3 col-md-8 mt-2 highlighted" id="referenceNoContainer">
+                <label for="referenceNo">Reference No</label>
+                <span class="indc">:</span>
+                <span id="referenceNo">ABC123</span>
             </div>
-</div>
+            <!-- Tabs content -->
+            <div class="form-body">
+                <div class="form-title row">
+                    <h4>Section 02</h4>
+                </div>
 
-          
-        <div class="d-flex justify-content-end mt-3">
-          <a href="index.html" id="nextButton" class="btn btn-primary proceed-button">Next</a>
+                <div class="form-row row">
+                    <div class="col-lg-2 col-md-4">
+                        <label for="">Name in full</label>
+                        <span class="indc">:</span>
+                        <label for='name' style='font-size: x-small;   font-weight: bold;'>(Please underline the surname)</label>
+                    </div>
+                    <div class="col-lg-4 col-md-8">
+                        <input type="text" placeholder="" class="form-control form-control-sm">
+                    </div>
+                    <div class="form-row row">
+                        <div class="col-lg-2 col-md-4">
+                            <label for="">Name with initials</label>
+                            <span class="indc">:</span>
+                            <label for='name' style='font-size: x-small;   font-weight: bold;'>(in Sinhala)</label>
+                        </div>
+                        <div class="col-lg-4 col-md-8">
+                            <input type="text" placeholder="Please write only last name –Ex: බී.එස්.එස්. පීරිස්"
+                                class="form-control form-control-sm">
+                        </div>
+                        <div class="col-lg-2 col-md-4">
+                            <label for="">Name with initials</label>
+                            <span class="indc">:</span>
+                            <label for='name' style='font-size: x-small;   font-weight: bold;'>(in English)</label>
+                        </div>
+                        <div class="col-lg-4 col-md-8">
+                            <input type="text" placeholder="Please write only last name – Ex: B.S.S. Peiris"
+                                class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="form-row row">
+                        <div class="col-lg-2 col-md-4">
+                            <label for="">Sex</label>
+                            <sup class="req">*</sup>
+                            <span class="indc">:</span>
+                        </div>
+                        <div class="col-lg-4 col-md-8 pt-1">
+                            <input type="radio" name="gender"> Male &nbsp;&nbsp;
+                            <input type="radio" name="gender"> Female &nbsp;&nbsp;
+                            <input type="radio" name="gender"> Other
+                        </div>
+                        <div class="col-lg-2 col-md-4">
+                            <label for="religion">Religion</label>
+                            <sup class="req">*</sup>
+                            <span class="indc">:</span>
+                        </div>
+                        <div class="col-lg-4 col-md-8">
+                            <select class="form-select form-select-sm custom-select" id="religion" name="religion"
+                                aria-label="Religion"
+                                style="background-color: #35333324; border: 1px solid rgb(135, 135, 135);">
+                                <option selected>Please Select Religion</option>
+                                <option value="buddhist">Buddhist</option>
+                                <option value="hindu">Hindu</option>
+                                <option value="muslim">Muslim</option>
+                                <option value="christian">Christian</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row row">
+                        <div class="col-lg-2 col-md-4">
+                            <label for="mediumOfLearning">Medium of Learning</label>
+                            <sup class="req">*</sup>
+                            <span class="indc">:</span>
+                        </div>
+                        <div class="col-lg-4 col-md-8 pt-1">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckSinhala">
+                                <label class="form-check-label" for="flexCheckSinhala">Sinhala</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckEnglish" checked>
+                                <label class="form-check-label" for="flexCheckEnglish">English</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckTamil">
+                                <label class="form-check-label" for="flexCheckTamil">Tamil</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4">
+                            <label for="dob">Date of Birth</label>
+                            <sup class="req">*</sup>
+                            <span class="indc">:</span>
+                        </div>
+                        <div class="col-lg-4 col-md-8">
+                            <input type="date" id="dob" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="form-row row">
+                        <div class="col-lg-2 col-md-4">
+                            <label for="ageOn31Jan2024" class="d-inline">Age on 31st January</label>
+                            <sup class="req">*</sup>
+                            <span class="indc d-inline">:</span>
+                        </div>
+                        <div class="col-lg-2 col-md-4">
+                            <input type="number" id="ageYears" name="ageYears" class="form-control form-control-sm"
+                                placeholder="Years" min="0" required>
+                        </div>
+                        <div class="col-lg-2 col-md-4">
+                            <input type="number" id="ageMonths" name="ageMonths"
+                                class="form-control form-control-sm" placeholder="Months" min="0" required>
+                        </div>
+                        <div class="col-lg-2 col-md-4">
+                            <input type="number" id="ageDays" name="ageDays" class="form-control form-control-sm"
+                                placeholder="Days" min="0" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end mt-3">
+                    <a href="page4.html" id="nextButton" class="btn btn-primary proceed-button">Next</a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </body>
-
 </html>
