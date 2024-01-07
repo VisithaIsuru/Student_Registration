@@ -97,8 +97,7 @@ body {
 
 .login-container {
   background-color: #FFF;
-  background-color: rgba(255, 255, 255, 0.85); /* Adjust the alpha value as needed (0 for fully transparent, 1 for fully opaque) */
-
+  background-color: rgba(255, 255, 255, 0.85); 
 }
 
 .form-header {
@@ -184,7 +183,7 @@ body {
   background-color: rgba(0, 0, 0, 0.12);
   border-radius: 2px;
   margin-bottom: 30px;
-  border-color: #928e8e; /* Change this to the desired color */
+  border-color: #928e8e; 
 
 }
 .form-row .form-control:active {
@@ -211,7 +210,6 @@ body {
   font-size: 0.7rem;
 }
 
-/*# sourceMappingURL=style.css.map */
 .nav-tabs {
   border-bottom: 2px solid #dee2e6;
   background-color: #cedff9;
@@ -247,13 +245,21 @@ body {
 
 .table td,
 .table th {
-  padding: 0.5px; /* Adjust the padding value as needed */
+  padding: 0.5px; 
 }
 
 hr {
-  border-top: 2px solid #000000; /* Set the color you want */
+  border-top: 2px solid #000000;
 }
 
 .serial-input {
   background-color: transparent;
 }
+
+.highlighted {
+  background-color: #d6daf4; 
+  padding: 2px; 
+  border-radius: 4px; 
+}
+
+
